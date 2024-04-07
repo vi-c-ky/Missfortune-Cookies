@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorMain"
+    android:layout_gravity="center">
+
+
+    <ImageView
+        android:id="@+id/skull"
+        android:layout_width="209dp"
+        android:layout_height="232dp"
+        android:layout_marginStart="98sp"
+        android:layout_marginLeft="98sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="99sp"
+        android:layout_marginRight="99sp"
+        app:layout_constraintBottom_toTopOf="@+id/fortune"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_skjelletet" />
+
+    <TextView
+        android:id="@+id/fortune"
+        android:layout_width="311sp"
+        android:layout_height="77dp"
+        android:layout_marginStart="37sp"
+        android:layout_marginLeft="37sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="37sp"
+        android:layout_marginRight="37sp"
+        android:layout_marginBottom="5sp"
+        android:fontFamily="@font/josefinsanslight"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/colortext"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/fortuneButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skull" />
+
+    <Button
+        android:id="@+id/fortuneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136sp"
+        android:layout_marginLeft="136sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="136sp"
+        android:layout_marginRight="136sp"
+        android:layout_marginBottom="60sp"
+        android:fontFamily="@font/josefinsanslight"
+        android:text="Get Your Misfortune"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fortune" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
